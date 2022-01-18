@@ -1,0 +1,141 @@
+:root{
+  --blue: #0188DF;
+  --black: #354046;
+}
+
+
+@media (max-width: 768px) {
+
+
+    html{
+      font-size: 55%;
+    }
+// Header section start
+
+
+    #header{
+
+      .container{
+
+        .nav{
+          position: fixed;
+          top: -100rem; left: 50%;
+          transform: translate(-50%, -50%);
+          box-shadow: 0 0 0 100vh rgba(0,0,0,0.3);
+          border-radius: .5rem;
+          border: .3rem solid var(--blue) !important;
+          background: #fff;
+          width: 50%;
+          opacity: 0;
+
+          ul{
+            width: 100%;
+            flex-flow: column;
+            padding: 3rem 0;
+
+            li{
+              width: 100%;
+              text-align: center;
+              margin: 1rem 0;
+
+              a{
+                font-size: 3rem;
+                display: block;
+              }
+            }
+          }
+        }
+
+        .fa-bars{
+          display: block;
+        }
+
+        .nav-toggle{
+          top: 50%;
+          opacity: 1;
+        }
+      }
+
+
+    }
+
+
+// Header section end
+
+//Home section starts
+#home{
+
+
+  .container{
+
+
+    .content{
+
+      text-align: center;
+
+    }
+  }
+}
+//Home section end
+
+
+//About section starts
+#about{
+  .content{
+    text-align: left;
+
+    .leftSide{
+      margin-top: 8rem;
+    }
+  }
+}
+//About section end
+
+//Contact section starts
+.contact{
+
+  .heading{
+    margin-top: 90px;
+  }
+
+  form{
+
+    .inputBox{
+
+      input, select{
+
+        width: 100%;
+
+      }
+    }
+
+    .btn{
+
+          width: 100%;
+
+      button{
+
+        width: 80%;
+
+      }
+
+    }
+
+  }
+}
+//Contact section end
+
+
+//Footer section end
+.footer{
+  .col-md-4:nth-child(1) a{
+      text-align: center;
+  }
+
+  p{
+    text-align: center;
+    align-items: center;
+  }
+}
+//Footer section starts
+}

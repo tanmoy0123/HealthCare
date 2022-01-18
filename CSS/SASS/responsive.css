@@ -1,0 +1,71 @@
+:root {
+  --blue: #0188DF;
+  --black: #354046;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  #header .container .nav {
+    position: fixed;
+    top: -100rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.3);
+    border-radius: .5rem;
+    border: 0.3rem solid var(--blue) !important;
+    background: #fff;
+    width: 50%;
+    opacity: 0;
+  }
+  #header .container .nav ul {
+    width: 100%;
+    flex-flow: column;
+    padding: 3rem 0;
+  }
+  #header .container .nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  #header .container .nav ul li a {
+    font-size: 3rem;
+    display: block;
+  }
+  #header .container .fa-bars {
+    display: block;
+  }
+  #header .container .nav-toggle {
+    top: 50%;
+    opacity: 1;
+  }
+  #home .container .content {
+    text-align: center;
+  }
+  #about .content {
+    text-align: left;
+  }
+  #about .content .leftSide {
+    margin-top: 8rem;
+  }
+  .contact .heading {
+    margin-top: 90px;
+  }
+  .contact form .inputBox input, .contact form .inputBox select {
+    width: 100%;
+  }
+  .contact form .btn {
+    width: 100%;
+  }
+  .contact form .btn button {
+    width: 80%;
+  }
+  .footer .col-md-4:nth-child(1) a {
+    text-align: center;
+  }
+  .footer p {
+    text-align: center;
+    align-items: center;
+  }
+}

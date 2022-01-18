@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,300;0,400;1,100&family=Open+Sans:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --blue: #0188DF;
+  --black: #354046;
+}
+
+* {
+  font-family: 'Bebas Neue', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none !important;
+  outline: none !important;
+  text-decoration: none !important;
+  text-transform: capitalize;
+  font-weight: 400;
+  transition: all .2s linear;
+}
+
+*::selection {
+  background: var(--black);
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  /* overflow-x: hidden; */
+}
+
+body {
+  /* overflow-x: hidden; */
+}
+
+
+.button{
+  height: 3.5rem;
+  width: 15rem;
+  background: var(--blue);
+  color: var(--black);
+  text-transform: capitalize;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: .5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin: 1rem 0;
+}
+.button::before{
+  content: '';
+  position: absolute;
+  top: 0; right: -100%;
+  height: 100%;
+  width: 100%;
+  background-color: var(--black);
+  z-index: -1;
+  transition: .5s;
+}
+.button:hover:before{
+  right: 0%;
+  transition: .5s;
+}
+
+.button:hover{
+  box-shadow: -5px 5px 10px 1px var(--blue);
+  color: var(--blue);
+}
+
+/* Header section starts */
+
+
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem 1rem;
+  z-index: 1000;
+}
+
+#header a {
+  color: var(--black);
+}
+
+#header a:hover {
+  color: var(--blue);
+}
+
+#header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .container .logo {
+  font-size: 3rem;
+}
+
+#header .container .logo span {
+  color: var(--blue);
+}
+
+#header .container nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#header .container nav ul li {
+  margin: 0 1rem;
+}
+
+#header .container nav ul li a {
+  font-size: 2rem;
+}
+
+#header .container .fa-bars {
+  font-size: 3.5rem;
+  color: var(--blue);
+  cursor: pointer;
+  display: none;
+}
+
+#header .fa-times {
+  transform: rotate(-180deg) skewX(180deg);
+}
+
+/* Header section starts */
+
+
+
+
+/* Home section starts */
+
+#home .container .content h1{
+  font-size: 5rem;
+  color: var(--black);
+}
+
+#home .container .content h1 span{
+  color: var(--blue);
+}
+
+#home .container .content h3{
+  font-size: 3rem;
+  color: var(--black);
+}
+
+#home .container .content h3 span{
+  color: var(--blue);
+}
+
+/* Home section ends */
